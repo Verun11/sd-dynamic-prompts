@@ -1,5 +1,9 @@
 from __future__ import annotations
 
+from sd_dynamic_prompts.custom_wildcard_file import CustomWildcardTextFile
+import dynamicprompts.wildcards.collection.text_file
+dynamicprompts.wildcards.collection.text_file.WildcardTextFile = CustomWildcardTextFile
+
 import logging
 import math
 from functools import lru_cache
